@@ -1,0 +1,192 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #c5e4e7;
+  font-family: "Space Mono";
+}
+body .container {
+  display: flex;
+  width: 920px;
+  height: 480px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px #bbdfdf;
+  padding: 50px;
+}
+body .head {
+  position: absolute;
+  top: 60px;
+  text-transform: capitalize;
+  color: #2e5153;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+body .enter {
+  width: 50%;
+  height: 100%;
+}
+body .enter input::-webkit-outer-spin-button,
+body .enter input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body .enter input:focus {
+  border: 2px solid #2abfac;
+  outline: none;
+}
+body .enter .bill, body .enter .people {
+  border: none;
+  text-align: right;
+  color: #2e5153;
+  width: 90%;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 5px;
+  background-image: url(images/icon-dollar.svg);
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: 15px;
+  margin-top: 15px;
+}
+body .enter .people {
+  background-image: url(images/icon-person.svg);
+}
+body .enter span {
+  float: right;
+  margin-right: 40px;
+  color: red;
+}
+body .enter .active {
+  background-color: #9fe8df;
+  color: #2e5153;
+}
+
+.tip {
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  gap: 20px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.tip button {
+  background-color: #2e5153;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.tip button:hover {
+  background-color: #9fe8df;
+  color: #2e5153;
+}
+.tip .custom {
+  font-size: 25px;
+  text-align: right;
+  border: none;
+  border-radius: 5px;
+}
+
+.output {
+  width: 50%;
+  height: 100%;
+  background-color: #2e5153;
+  border-radius: 15px;
+  position: relative;
+}
+.output .tip-amount, .output .total {
+  margin-left: 50px;
+  margin-top: 50px;
+  display: flex;
+}
+.output .tip-amount h2, .output .tip-amount p, .output .total h2, .output .total p {
+  margin: 0;
+  color: #ffffff;
+}
+.output .tip-amount h1, .output .total h1 {
+  font-size: 50px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 25px;
+  color: #2cbdac;
+}
+.output button {
+  position: absolute;
+  bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 380px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2cbdac;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e5153;
+  transition: 0.5s;
+}
+.output button:hover {
+  background-color: #9fe8df;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    display: block;
+  }
+  body .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    height: 100%;
+    width: 375px;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  body .head {
+    margin-top: 0;
+    margin-left: 125px;
+  }
+  body .enter {
+    display: block;
+    margin-left: 30px;
+  }
+  body .enter .bill, body .enter .people {
+    width: 300px;
+  }
+  body .enter .tip {
+    margin-top: 10px;
+    grid-template-columns: 150px 150px;
+  }
+  body .output {
+    display: block;
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 310px;
+    height: 300px;
+  }
+  body .output p, body .output h2 {
+    font-size: 12px;
+  }
+  body .output .total h1 {
+    font-size: 25px;
+  }
+  body .output .tip-amount h1 {
+    font-size: 25px;
+  }
+  body .output .total, body .output .tip-amount {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  body .output button {
+    width: 275px;
+    margin-left: 20px;
+    margin-top: 20px;
+    bottom: 10px;
+  }
+}/*# sourceMappingURL=styles.css.map */
